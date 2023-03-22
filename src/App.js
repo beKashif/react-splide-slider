@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import SplideSlider from './components/SplideSlider';
 
 function App() {
+  const images = [
+    "https://picsum.photos/id/1018/800/600",
+    "https://picsum.photos/id/1019/800/600",
+    "https://picsum.photos/id/1020/800/600",
+    "https://picsum.photos/id/1021/800/600",
+    "https://picsum.photos/id/1022/800/600",
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <SplideSlider images={images} />  
     </div>
   );
 }
